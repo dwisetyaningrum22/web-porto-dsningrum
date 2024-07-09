@@ -201,7 +201,7 @@
     <div class="container">
       <div id="message"></div>
 
-      <h1 class="mt-4 mb-4 text-center text-danger">SKILLS USER CRUD</h1>
+      <h1 class="mt-4 mb-4 text-center text-dark">SKILLS</h1>
       <div class="card">
         <div class="card-header">
           <div class="row">
@@ -281,24 +281,6 @@
     </footer>
     <!-- Footer end -->
 
-    <script>
-    $(document).ready(function() {
-      showAll();
-
-      function showAll() {
-        $.ajax({
-          type: "GET",
-          contentType: "application/json",
-          url: "http://localhost/web-porto-dsningrum/si-admin/api/users/read.php?id=",
-          success: function(response) {
-            $("#full_name").text(response.full_name); //mengubah elemen html dengan .text(nilai) atau .html(nilai)
-            $("#job_position").text(response.job + " | " + response.expected_position);
-          },
-          error: function(err) {},
-        });
-      }
-    });
-  </script>
 
   <script>
     $(document).ready(function() {
